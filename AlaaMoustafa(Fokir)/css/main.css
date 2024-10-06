@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Source Sans Pro", sans-serif;
+}
+.clear-fix {
+  clear: both;
+}
+
+.header {
+  background-image: url(../images/images/hero\ img.jpg);
+  height: 100vh;
+  overflow: hidden;
+}
+.layer {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  overflow: hidden;
+}
+a,
+ul li {
+  text-decoration: none;
+}
+.navbar {
+  /*  background-color: rgb(238, 157, 51);*/
+}
+
+.logo a {
+  color: rgb(255, 48, 91);
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  margin: auto;
+  position: relative;
+  left: 18px;
+  top: 5px;
+}
+
+.navbar .nav-list {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  /*align-items: center;*/
+  /*  background-color: rgb(133, 44, 113);
+*/
+}
+.navbar .nav-list ul li {
+  list-style: none;
+}
+.navbar .nav-list a {
+  color: rgb(255, 255, 255);
+  padding: 0 15px;
+  position: relative;
+  right: 8px;
+  bottom: 50px;
+  font-weight: 300;
+  font-size: 16px;
+  font-style: normal;
+  text-decoration: none solid rgb(255, 251, 252);
+}
+.navbar .nav-list a span {
+  color: rgb(255, 48, 91);
+}
+.caption {
+  display: flex;
+  flex-direction: column;
+  /*background-color: aqua;*/
+  justify-content: center;
+  align-items: center;
+  margin: 150px;
+  line-height: 0%;
+}
+
+.caption h3,
+h4 {
+  color: rgb(255, 255, 255);
+}
+.caption h3 {
+  font-weight: 700;
+  font-size: 24px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.caption h4 {
+  font-weight: 300;
+  font-size: 26px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.caption h1 {
+  color: rgb(255, 48, 91);
+  font-weight: 700;
+  font-size: 70px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* hello section */
+.hello {
+  margin: 40px;
+}
+.hello .box {
+  float: left;
+  width: 40%;
+  padding: 0 40px;
+}
+.hello .myimage {
+  box-shadow: 8px 8px #555555 inset, -8px -8px #555555 inset;
+  position: relative;
+  border-radius: 5px;
+}
+.hello .myimage img {
+  width: 100%;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  display: block;
+}
+/* overlay*/
+.hello .overlay {
+  border-radius: 5px;
+  position: absolute;
+  top: calc(100% + 20px);
+  left: 20px;
+  height: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 0.5s;
+  overflow: hidden;
+  opacity: 0;
+}
+.hello .hello-text {
+  width: 60%;
+  padding: 0 40px;
+  float: right;
+  color: #555;
+}
+.hello .hello-text h2 {
+  font-size: 34px;
+  font-weight: 600;
+  color: #333;
+  padding-left: 15px;
+  line-height: 22px;
+  position: relative;
+}
+.hello .hello-text h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #ff305b;
+}
+.hello .hello-text p {
+  width: 95%;
+  line-height: 1.6;
+  margin-top: 20px;
+  padding-bottom: 25px;
+  border-bottom: 1px dashed#555;
+}
+.hello .hello-text ul {
+  margin: 25px 0;
+}
+.hello .hello-text ul li {
+  float: left;
+  color: #555;
+  margin-bottom: 20px;
+}
+.hello .hello-text ul li:nth-child(odd) {
+  width: 50%;
+}
+.hello .hello-text ul li:nth-child(even) {
+  width: 50%;
+}
+.hello .hello-text ul li span {
+  font-weight: 500;
+  color: #333;
+}
+.hello .hello-text .btn {
+  padding: 12px 20px;
+  border-radius: 5px;
+  background-color: #ff305b;
+  margin-right: 12px;
+  transition: all 0.5s;
+  color: white;
+}
+.hello .hello-text a {
+  color: white;
+}
+
+.hello .hello-text i {
+  margin-left: 8px;
+  color: white;
+}
+
+/* our services */
+.our-services {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 95px 0 54px;
+}
+
+.service-header{
+  padding-bottom: 60px;
+}
+.service-header h2{
+  position: relative;
+  font-size: 36px;
+  color:#333333;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.service-header h2:after{
+  content: "";
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  background-color: #ff305b;
+  height: 1px;
+  width: 160px;
+  top: 60px
+
+}
+.service-header h2:before{
+  content: "";
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  border-color: #ff305b;
+  border-style: solid;
+  border-width: 1px 0;
+  padding: 4px 0 5px;
+  width: 70px;
+  top: 55px;
+}
+.service-item{
+  float: left;
+  width: 25%;
+  padding: 5px;
+  text-align: center;
+
+}
+.service-item .content{
+  padding: 40px 15px;
+  transition: all 0.4s ease-in-out 0s;
+  
+}
+.service-item .content:hover{
+  background-color: #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .1);
+  cursor: pointer;
+}
+.service-item .content i{
+  color: #ff305b;
+    display: block;
+    font-size: 36px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out 0s;
+    transition: all 1s;
+}
+.service-item:hover i {
+  transform: scale(1.2);
+}
+
+.service-item .content h3{
+  margin-bottom: 15px; 
+  color: #333;
+  font-weight: 600;
+  font-size: 24px;
+  margin: 15px 0;
+
+}
+
+.service-item .content p{
+  line-height: 25px;
+  color:#555555;
+}
+
+
+
+.contact {
+  width: 60%;
+  margin: auto;
+}
+
+.contact .input-box {
+  padding: 10px 15px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid#ccc;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  border-color: #FF305B;
+  outline: none;
+}
+
+.contact .left {
+  float: left;
+}
+
+.contact .right {
+  float: right;
+}
+
+.contact .left,
+.contact .right {
+  width: 50%;
+}
+
+.contact input[name="user-name"],
+.contact input[name="user-email"] {
+  width: 100%;
+}
+
+.contact input[name="subject"],
+.contact textarea {
+  display: block;
+  width: 100%;
+}
+
+.contact input[type="submit"] {
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 14px;
+}
+
+
+/* Footer Styles */
+
+
+/* ----------------------------- */
+
+.footer {
+  padding: 60px 0;
+  text-align: center;
+  background-color: #333;
+  color: white;
+}
+
+.footer p {
+  margin-top: 15px;
+}
+
+.footer span {
+  color: #FF305B;
+}
+
+
+
+
+
+
