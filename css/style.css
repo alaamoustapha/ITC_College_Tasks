@@ -1,0 +1,76 @@
+/* import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+body{
+  background-color: #F7ECDE;
+}
+.dotted-line{
+  width: 100%;
+  margin-top: 40px;
+  border-bottom: #352E28 dotted;
+
+}
+
+
+#header .heading{
+  font-family: "Pacifico", cursive;
+  font-weight: 500;
+  
+  font-size: 50px;
+  position: relative;
+  
+
+  font-stretch: 100%;
+  color:#352E28 ;
+}
+#header .heading::before
+{
+  content:'';
+  height: 15px;
+  width: 23%;
+  position: absolute;
+  justify-content: center;
+  bottom: 0px;
+  left:38%;
+ 
+ /* right: 20px;*/
+  background-color: #FEC260;
+  transition: all 0.5s;
+  z-index: -1;
+  
+}
+#header .heading:hover::before{
+  height: 35px;
+}
+ 
+
+
+/*** main */ 
+.second-head{
+  
+  font-size: 30px;
+  font-weight: 500;
+  font-family: "Righteous", sans-serif;
+  background-image: linear-gradient(to right, rgb(100, 168, 121), rgb(209, 202, 118));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.second-head .icon1{
+  color:#3EA55B ;
+
+}
+.second-head .icon2{
+color: #B2AC49;
+
+}
+.label1,.label2{
+  color: #212529;
+
+  font-size: 16;
+  font-weight: 600;
+  font-family: "PT Sans Caption", sans-serif
+}
+
+
